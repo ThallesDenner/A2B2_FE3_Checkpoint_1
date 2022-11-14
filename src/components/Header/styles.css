@@ -1,0 +1,68 @@
+.menuItemList {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0rem;
+  /*A linha acima é necessária para retirar o espaço introduzido pelo marcador da lista*/
+}
+
+.menuItem {
+  width: 20%;
+  padding: 1rem;
+  list-style: none;
+  text-align: center;
+}
+
+.menuItem:hover {
+  transition: background-color 0.5s ease;
+  background-image: linear-gradient(to right, #9c27b0, #e040fb);
+  cursor: pointer;
+}
+
+.menuItemLink {
+  font-family: "Oxygen", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu:hover > .submenuItemList {
+  visibility: visible;
+}
+
+.submenuItemList {
+  width: 100%;
+  position: absolute;
+  left: 0rem;
+  margin-top: 1.5rem;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0rem;
+  /*A linha acima é necessária para retirar o espaço introduzido pelo marcador da lista*/
+  visibility: hidden;
+  transition: visibility 0.5s ease-in;
+}
+
+.submenuItemList > .menuItem {
+  width: 100%;
+  list-style: none;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .menu > .menuItemList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menuItemList > .menuItem {
+    width: 100%;
+  }
+}

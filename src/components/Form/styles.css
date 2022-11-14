@@ -1,0 +1,137 @@
+.formContainer {
+  width: 90%;
+  max-width: 45rem;
+  max-height: 40rem;
+  border-radius: 2rem;
+  box-shadow: 0rem 1rem 4rem 0.2rem rgba(0, 0, 0, 0.15);
+  /* background-color: #ffffff; */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  align-self: start;
+  /* justify-self: center; */
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.formTitle {
+  color: #8c55aa;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 2rem auto;
+}
+
+label {
+  display: block;
+  font-size: 1.5rem;
+}
+
+#description,
+#numberCans {
+  border: 0.2rem solid rgba(0, 0, 0, 0.02);
+  border-radius: 2rem;
+  outline: none;
+  /* background-color: rgba(135, 125, 125, 0.05); */
+  color: rgb(40, 50, 60);
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#description:focus,
+#numberCans:focus {
+  border: 0.2rem solid rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  width: 100%;
+}
+
+.numberCans,
+.color {
+  width: 50%;
+}
+
+#description {
+  width: 100%;
+}
+
+#numberCans {
+  width: 80%;
+}
+
+#numberCans::-webkit-inner-spin-button {
+  all: unset;
+  min-width: 2rem;
+  min-height: 4.5rem;
+  background-image: linear-gradient(
+      to top,
+      transparent 0px,
+      transparent 16px,
+      #fff 16px,
+      #fff 26px,
+      transparent 26px,
+      transparent 35px,
+      #000 35px,
+      #000 36px,
+      transparent 36px,
+      transparent 40px
+    ),
+    linear-gradient(
+      to right,
+      transparent 0px,
+      transparent 10px,
+      #000 10px,
+      #000 11px,
+      transparent 11px,
+      transparent 21px
+    );
+  transform: rotate(90deg) scale(0.8, 0.9);
+  cursor: pointer;
+}
+
+#color {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 4rem;
+  height: 4rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#color::-webkit-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+#color::-moz-color-swatch {
+  border: none;
+  border-radius: 50%;
+}
+
+.saveCard {
+  width: 60%;
+  border: none;
+  border-radius: 5rem;
+  background-image: linear-gradient(to right, #9c27b0, #e040fb);
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  color: #900;
+}
